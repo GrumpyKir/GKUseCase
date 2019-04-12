@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6371D7D7DCD3E7AB9E635897 /* libPods-GKUseCase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D328494E202227A08B750F /* libPods-GKUseCase.a */; };
 		ED2E8A442260AD0100E44849 /* GKUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2E8A422260AD0100E44849 /* GKUseCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED2E8A4D2260AF2300E44849 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A4C2260AF2300E44849 /* Repository.swift */; };
+		ED2E8A4F2260AF3500E44849 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A4E2260AF3500E44849 /* UseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05D328494E202227A08B750F /* libPods-GKUseCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GKUseCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		947F44464D01956F43B51C94 /* Pods-GKUseCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKUseCase.debug.xcconfig"; path = "Target Support Files/Pods-GKUseCase/Pods-GKUseCase.debug.xcconfig"; sourceTree = "<group>"; };
+		AA264514F82F75969CA57228 /* Pods-GKUseCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKUseCase.release.xcconfig"; path = "Target Support Files/Pods-GKUseCase/Pods-GKUseCase.release.xcconfig"; sourceTree = "<group>"; };
 		ED2E8A3F2260AD0100E44849 /* GKUseCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKUseCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2E8A422260AD0100E44849 /* GKUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKUseCase.h; sourceTree = "<group>"; };
 		ED2E8A432260AD0100E44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2E8A4C2260AF2300E44849 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		ED2E8A4E2260AF3500E44849 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +29,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6371D7D7DCD3E7AB9E635897 /* libPods-GKUseCase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A491103175085644E0274C93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				947F44464D01956F43B51C94 /* Pods-GKUseCase.debug.xcconfig */,
+				AA264514F82F75969CA57228 /* Pods-GKUseCase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0636B615B47354176448D04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D328494E202227A08B750F /* libPods-GKUseCase.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED2E8A352260AD0100E44849 = {
 			isa = PBXGroup;
 			children = (
 				ED2E8A412260AD0100E44849 /* GKUseCase */,
 				ED2E8A402260AD0100E44849 /* Products */,
+				A491103175085644E0274C93 /* Pods */,
+				C0636B615B47354176448D04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +76,18 @@
 			children = (
 				ED2E8A422260AD0100E44849 /* GKUseCase.h */,
 				ED2E8A432260AD0100E44849 /* Info.plist */,
+				ED2E8A4B2260AF0A00E44849 /* SourceData */,
 			);
 			path = GKUseCase;
+			sourceTree = "<group>";
+		};
+		ED2E8A4B2260AF0A00E44849 /* SourceData */ = {
+			isa = PBXGroup;
+			children = (
+				ED2E8A4C2260AF2300E44849 /* Repository.swift */,
+				ED2E8A4E2260AF3500E44849 /* UseCase.swift */,
+			);
+			path = SourceData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED2E8A472260AD0100E44849 /* Build configuration list for PBXNativeTarget "GKUseCase" */;
 			buildPhases = (
+				65DEDA00DFEFBF5C274573F8 /* [CP] Check Pods Manifest.lock */,
 				ED2E8A3A2260AD0100E44849 /* Headers */,
 				ED2E8A3B2260AD0100E44849 /* Sources */,
 				ED2E8A3C2260AD0100E44849 /* Frameworks */,
 				ED2E8A3D2260AD0100E44849 /* Resources */,
+				ED2E8A4A2260AF0100E44849 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -95,6 +135,7 @@
 				TargetAttributes = {
 					ED2E8A3E2260AD0100E44849 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -125,11 +166,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65DEDA00DFEFBF5C274573F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKUseCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2E8A4A2260AF0100E44849 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2E8A3B2260AD0100E44849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E8A4D2260AF2300E44849 /* Repository.swift in Sources */,
+				ED2E8A4F2260AF3500E44849 /* UseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +345,9 @@
 		};
 		ED2E8A482260AD0100E44849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947F44464D01956F43B51C94 /* Pods-GKUseCase.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = appcraft.GKUseCase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +373,9 @@
 		};
 		ED2E8A492260AD0100E44849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA264514F82F75969CA57228 /* Pods-GKUseCase.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
