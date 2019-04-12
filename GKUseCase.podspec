@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
 	spec.homepage 		= 'https://github.com/GrumpyKir/GKUseCase'
 	spec.author 		= { 'Opekishev Kirill' => 'grumpykir@gmail.com' }
 	spec.summary 		= 'Domain and data layer superclasses'
-	spec.source 		= { :git => 'https://github.com/GrumpyKir/GKUseCase.git', :tag => '1.0.4' }
+	spec.source 		= { :git => 'https://github.com/GrumpyKir/GKUseCase.git', :tag => '1.0.1' }
 	spec.swift_version 	= '5.0'
 
 	spec.ios.deployment_target 	= '10.0'
