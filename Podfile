@@ -7,7 +7,7 @@ target 'GKUseCase' do
 
   # Pods for GKUseCase
   pod 'GKNetwork', '~> 1.0.0'
-  pod 'GKCoreData', '~> 1.0.0'
+  pod 'GKCoreData', '~> 1.0.4'
   pod 'GKExtensions', '~> 1.1.0'
   
 end
