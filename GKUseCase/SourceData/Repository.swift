@@ -18,7 +18,7 @@ open class Repository: RepositoryInterface {
     public lazy var localInterface: LocalWorkerInterface = LocalWorker(modelName: modelName)
     public lazy var remoteInterface: RemoteWorkerInterface = RemoteWorker()
     
-    public var entityClass: AnyClass {
+    open var entityClass: AnyClass {
         NSLog("[\(self)] - Entity class not implemented")
         
         return NSObject.self
@@ -29,7 +29,7 @@ open class Repository: RepositoryInterface {
         self.modelName = modelName
     }
     
-    convenience init() {
+    public convenience init() {
         self.init(modelName: "UNKNOWN")
     }
     

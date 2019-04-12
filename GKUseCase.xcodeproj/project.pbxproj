@@ -11,6 +11,7 @@
 		ED2E8A442260AD0100E44849 /* GKUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2E8A422260AD0100E44849 /* GKUseCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED2E8A4D2260AF2300E44849 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A4C2260AF2300E44849 /* Repository.swift */; };
 		ED2E8A4F2260AF3500E44849 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A4E2260AF3500E44849 /* UseCase.swift */; };
+		ED2E8A532260C3C000E44849 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E8A522260C3C000E44849 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ED2E8A432260AD0100E44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2E8A4C2260AF2300E44849 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		ED2E8A4E2260AF3500E44849 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		ED2E8A522260C3C000E44849 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E8A532260C3C000E44849 /* CoreData.framework in Frameworks */,
 				6371D7D7DCD3E7AB9E635897 /* libPods-GKUseCase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +51,7 @@
 		C0636B615B47354176448D04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED2E8A522260C3C000E44849 /* CoreData.framework */,
 				05D328494E202227A08B750F /* libPods-GKUseCase.a */,
 			);
 			name = Frameworks;
