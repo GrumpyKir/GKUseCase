@@ -2,12 +2,12 @@ Pod::Spec.new do |spec|
 	spec.platform = :ios
 
 	spec.name 			= 'GKUseCase'
-	spec.version 		= '1.1.2'
+	spec.version 		= '1.1.3'
 	spec.license 		= { :type => 'MIT', :file => 'LICENSE' }
 	spec.homepage 		= 'https://github.com/GrumpyKir/GKUseCase'
 	spec.author 		= { 'Opekishev Kirill' => 'grumpykir@gmail.com' }
 	spec.summary 		= 'Domain and data layer superclasses'
-	spec.source 		= { :git => 'https://github.com/GrumpyKir/GKUseCase.git', :tag => '1.0.2' }
+	spec.source 		= { :git => 'https://github.com/GrumpyKir/GKUseCase.git', :tag => "#{spec.version}" }
 	spec.swift_version 	= '5.0'
 
 	spec.ios.deployment_target 	= '10.0'

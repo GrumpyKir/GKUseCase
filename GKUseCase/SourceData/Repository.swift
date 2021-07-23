@@ -96,8 +96,6 @@ open class Repository: RepositoryInterface {
         }
     }
     
-    //
-    
     @discardableResult
     open func execute<T: Codable>(_ request: URLRequest, model: T.Type, completion: ((_ result: Any?, _ response: HTTPURLResponse?, _ error: Error?) -> Void)? = nil) -> String {
         let taskUid = self.remoteInterface.execute(request) { (result, response, error) in
