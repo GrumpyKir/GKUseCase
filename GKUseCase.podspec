@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 	spec.platform = :ios
 
 	spec.name 			= 'GKUseCase'
-	spec.version 		= '1.0.2'
+	spec.version 		= '1.1.0'
 	spec.license 		= { :type => 'MIT', :file => 'LICENSE' }
 	spec.homepage 		= 'https://github.com/GrumpyKir/GKUseCase'
 	spec.author 		= { 'Opekishev Kirill' => 'grumpykir@gmail.com' }
@@ -18,5 +18,5 @@ Pod::Spec.new do |spec|
 	spec.frameworks = 'UIKit', 'CoreData'
 	spec.dependency 'GKCoreData', '~> 1.0.5'
 	spec.dependency 'GKExtensions', '~> 1.1.0'
-	spec.dependency 'GKNetwork', '~> 1.1.0'
+	spec.dependency 'GKNetwork', '~> 1.2.3'
 end
