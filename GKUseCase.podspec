@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 	spec.platform = :ios
 
 	spec.name 			= 'GKUseCase'
-	spec.version 		= '1.1.0'
+	spec.version 		= '1.1.1'
 	spec.license 		= { :type => 'MIT', :file => 'LICENSE' }
 	spec.homepage 		= 'https://github.com/GrumpyKir/GKUseCase'
 	spec.author 		= { 'Opekishev Kirill' => 'grumpykir@gmail.com' }
