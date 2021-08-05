@@ -16,6 +16,5 @@ Pod::Spec.new do |spec|
 	spec.frameworks		= 'UIKit', 'CoreData'
 	spec.requires_arc	= true
 	spec.dependency 'GKCoreData', '~> 1.0.5'
-	spec.dependency 'GKExtensions', '~> 1.2.0'
 	spec.dependency 'GKNetwork', '~> 1.2.3'
 end
