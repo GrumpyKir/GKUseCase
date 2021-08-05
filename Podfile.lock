@@ -1,0 +1,26 @@
+PODS:
+  - GKCoreData (1.0.5):
+    - GKExtensions (~> 1.1.0)
+  - GKExtensions (1.1.0)
+  - GKNetwork (1.2.3):
+    - GKExtensions (~> 1.1.0)
+
+DEPENDENCIES:
+  - GKCoreData (~> 1.0.4)
+  - GKExtensions (~> 1.1.0)
+  - GKNetwork (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - GKCoreData
+    - GKExtensions
+    - GKNetwork
+
+SPEC CHECKSUMS:
+  GKCoreData: c9d4315c9d425bac1dca8448f3ffac0d13c3644b
+  GKExtensions: e2336b4ae2a62bfc968fd1a4ced30365ffb3f73b
+  GKNetwork: 5746117cb121916d83cee0b684bca2988a77bf74
+
+PODFILE CHECKSUM: de82767c16095582758f7be822b664ce3b7ec8f4
+
+COCOAPODS: 1.10.1

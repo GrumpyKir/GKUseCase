@@ -6,8 +6,8 @@ target 'GKUseCase' do
   # use_frameworks!
 
   # Pods for GKUseCase
-  pod 'GKNetwork', '~> 1.1.0'
+  pod 'GKNetwork', '~> 1.2.0'
   pod 'GKCoreData', '~> 1.0.4'
-  pod 'GKExtensions', '~> 1.1.0'
+  pod 'GKExtensions', '~> 1.2.0'
   
 end
